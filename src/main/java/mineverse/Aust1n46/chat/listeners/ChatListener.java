@@ -473,9 +473,10 @@ public class ChatListener implements Listener {
 		if(mcp.getPlayer().hasPermission("venturechat.format")) {
 			chat = Format.FormatString(chat);
 		}
+		/* u made me waste a lot of time all 2 hours to find this there is no reason the user can't add a dam space uggg
 		if(!mcp.isQuickChat()) {
 			chat = " " + chat;
-		}
+		}more to come from bucky420 :| */
 		if(curColor.equalsIgnoreCase("None")) {
 			// Format the placeholders and their color codes to determine the last color code to use for the chat message color
 			chat = Format.getLastCode(Format.FormatStringAll(PlaceholderAPI.setBracketPlaceholders(mcp.getPlayer(), format))) + chat;
